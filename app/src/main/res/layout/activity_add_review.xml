@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0E0E">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="727dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6">
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="228dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#00FFFFFF"
+            android:foreground="@drawable/savebutton"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/ButtonPlus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.783"
+            tools:srcCompat="@drawable/savebutton" />
+
+        <ImageButton
+            android:id="@+id/ActorFalse"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#0F0E0E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxfalse" />
+
+        <ImageButton
+            android:id="@+id/GenreFalse"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="98dp"
+            android:backgroundTint="#0F0E0E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxfalse" />
+
+        <ImageButton
+            android:id="@+id/SugetFalse"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#0F0E0E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxfalse" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:gravity="top|start"
+            android:hint="Введите текст"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="5"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="413dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/m" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+
+            android:layout_width="35dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="3.5dp"
+
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/mm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Введите название"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="210dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/spinner_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="228dp"
+            android:text="Выберите качества этого фильма"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/spinner2"
+            app:layout_constraintTop_toTopOf="@+id/spinner2"
+            app:srcCompat="@drawable/arrow" />
+
+        <ImageButton
+            android:id="@+id/OriginFalse"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="166dp"
+            android:backgroundTint="#0F0E0E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxfalse" />
+
+        <ImageButton
+            android:id="@+id/DialogFalse"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="#0F0E0E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SugetFalse"
+            app:srcCompat="@drawable/checkboxfalse" />
+
+        <ImageButton
+            android:id="@+id/SyomkaFalse"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="166dp"
+            android:backgroundTint="#0F0E0E"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxfalse" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="40dp"
+            android:text="Сюжет"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/SugetFalse"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="106dp"
+            android:text="Диалоги"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/DialogFalse"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="172dp"
+            android:text="Съёмка"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/DialogFalse"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="172dp"
+            android:text="Оригинальность"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/OriginFalse"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="106dp"
+            android:text="Соответствие жанру"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/GenreFalse"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="411dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="872dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            app:srcCompat="@drawable/mmm" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="410dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/mmm" />
+
+        <ImageButton
+            android:id="@+id/MyReviewsNotActivity"
+            android:layout_width="148dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:srcCompat="@drawable/bmrn" />
+
+        <ImageButton
+            android:id="@+id/Home"
+            android:layout_width="149dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="8dp"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:srcCompat="@drawable/nafffff" />
+
+        <ImageView
+            android:id="@+id/imageView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView6"
+            app:srcCompat="@drawable/addreviewhelp" />
+
+        <ImageButton
+            android:id="@+id/ButtonPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/mmmm" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="40dp"
+            android:text="Актёрская игра"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/GenreFalse"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <ImageButton
+            android:id="@+id/SugetTrue"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            android:background="#00FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxtrue" />
+
+        <ImageButton
+            android:id="@+id/DialogTrue"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="26dp"
+            android:background="#00FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SugetFalse"
+            app:srcCompat="@drawable/checkboxtrue" />
+
+        <ImageButton
+            android:id="@+id/GenreTrue"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="98dp"
+            android:background="#00FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxtrue" />
+
+        <ImageButton
+            android:id="@+id/ActorTrue"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="32dp"
+            android:background="#00FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxtrue" />
+
+        <ImageButton
+            android:id="@+id/SyomkaTrue"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="166dp"
+            android:background="#00FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxtrue" />
+
+        <ImageButton
+            android:id="@+id/OriginTrue"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="166dp"
+            android:background="#00FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/checkboxtrue" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="413dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="480dp"
+            android:text="Укажите, что именно вам понравилось"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Итоговая оценка"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="160dp"
+            android:text="/ 100"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="43dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="212dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">ApplicationExam</string>
+    <string name="app_name">Мои рецензии</string>
+    <string-array name="genres">
+        <item>Выберите жанр</item>
+        <item>Триллер</item>
+        <item>Боевик</item>
+        <item>Комедия</item>
+        <item>Детектив</item>
+        <item>Приключение</item>
+        <item>Мультфильм</item>
+        <item>Фантастика</item>
+        <item>Фэнтези</item>
+        <item>Ужасы</item>
+        <item>Документальный</item>
+        <item>Драма</item>
+        <item>Исторический</item>
+        <item>Мелодрама</item>
+        <item>Мистика</item>
+        <item>Мюзикл</item>
+        <item>Военный</item>
+        <item>Аниме</item>
+        <item>Вестерн</item>
+        <item>Детский</item>
+        <item>Кинокомикс</item>
+        <item>Короткометражный</item>
+        <item>Криминал</item>
+        <item>Научный</item>
+        <item>Нуар</item>
+        <item>Реалити-шоу</item>
+        <item>Семейный</item>
+        <item>Спорт</item>
+        <item>Ток-шоу</item>
+        <item>Эротика</item>
+    </string-array>
 </resources>
