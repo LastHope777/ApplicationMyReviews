@@ -15,6 +15,7 @@ import android.view.animation.AnimationUtils
 import android.widget.Toast
 import android.widget.EditText
 import android.widget.ImageView
+import androidx.appcompat.app.AlertDialog
 
 
 class AddReview : AppCompatActivity() {
@@ -175,39 +176,45 @@ class AddReview : AppCompatActivity() {
         //Сохранение
         val savebutton: ImageButton = findViewById(R.id.imageButton2)
         savebutton.setOnClickListener {
-            //Итоговая оценка
-            val itognumber: EditText = findViewById(R.id.editTextNumber)
-            val rating = itognumber.getText().toString()
-            val ratingInt = rating.toInt()
-            if (ratingInt < 0)
-                itognumber.setText("0")
-            if (ratingInt > 100)
-                itognumber.setText("100")
+            if (name.text.toString() == "" || name.text.toString() == "Введите название") {
+                Toast.makeText(this, "Необходимо ввести название!", Toast.LENGTH_SHORT).show()
 
-            val title = name.text.toString()
-            val genre = spinner.selectedItem.toString()
-            val plot = sugetcheck // Значение для сюжета
-            val dialogues = dialogcheck // Значение для диалогов
-            val cinematography = syomkacheck // Значение для съемки
-            val acting = actorcheck // Значение для актерской игры
-            val genreCompliance = genrecheck // Значение для соответствия жанру
-            val originality = origincheck // Значение для оригинальности
-            val itog = itognumber.text.toString()
-            val additionalComments = EmotionText.toString()// Дополнительные комментарии
+            }
+            else {
+                //Итоговая оценка
+                val itognumber: EditText = findViewById(R.id.editTextNumber)
+                val rating = itognumber.getText().toString()
+                val ratingInt = rating.toInt()
+                if (ratingInt < 0)
+                    itognumber.setText("0")
+                if (ratingInt > 100)
+                    itognumber.setText("100")
 
-            dbHelper.addReview(
-                title,
-                genre,
-                plot,
-                dialogues,
-                cinematography,
-                acting,
-                genreCompliance,
-                originality,
-                itog,
-                additionalComments
-            )
+                val title = name.text.toString()
+                val genre = spinner.selectedItem.toString()
+                val plot = sugetcheck // Значение для сюжета
+                val dialogues = dialogcheck // Значение для диалогов
+                val cinematography = syomkacheck // Значение для съемки
+                val acting = actorcheck // Значение для актерской игры
+                val genreCompliance = genrecheck // Значение для соответствия жанру
+                val originality = origincheck // Значение для оригинальности
+                val itog = itognumber.text.toString()
+                val additionalComments = EmotionText.toString()// Дополнительные комментарии
+
+                dbHelper.addReview(
+                    title,
+                    genre,
+                    plot,
+                    dialogues,
+                    cinematography,
+                    acting,
+                    genreCompliance,
+                    originality,
+                    itog,
+                    additionalComments
+                )
 // После добавления рецензии вы можете выполнить другие действия, например, показать сообщение об успешном сохранении или перезагрузить список рецензий
+            }
         }
         val buttonHelp: ImageButton = findViewById(R.id.imageButton)
         val first: ImageView = findViewById(R.id.imageView0)
